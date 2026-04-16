@@ -71,7 +71,7 @@ export default function ProjectModal({
               className="relative w-full max-w-4xl mx-auto border border-(--accent-border) backdrop-blur-xl rounded-2xl shadow-2xl text-(--text-h) overflow-hidden"
             >
               {/* SCROLLABLE CONTENT */}
-              <div className="p-6 sm:p-10 md:p-12 max-h-[80vh] overflow-y-auto no-scrollbar">
+              <div className="p-6 sm:p-10 md:p-12 max-h-[80dvh] overflow-y-auto no-scrollbar">
 
                 {/* TITLE + CLOSE BUTTON */}
                 <div className="flex items-center justify-between mb-6">

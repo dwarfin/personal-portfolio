@@ -3,7 +3,7 @@ import { FontWeightText } from "./FontWeightText.jsx";
 
 export default function Hero() {
   return (
-    <section className="w-full h-screen overflow-x-hidden">
+    <section className="w-full h-dvh overflow-x-hidden">
       <div className="fixed inset-0 pointer-events-none -z-10">
         <Beams
           beamWidth={3}

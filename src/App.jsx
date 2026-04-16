@@ -29,7 +29,7 @@ export default function App() {
   return (
     <>
 
-      <div className="fixed inset-0 -z-10 pointer-events-none beams-bg">
+      <div className="fixed inset-0 -z-10 pointer-events-none">
         <Beams
           beamWidth={3}
           beamHeight={30}
