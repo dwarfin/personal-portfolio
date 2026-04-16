@@ -1,6 +1,7 @@
 import Grainient from "../components/Grainient";
 import Beams from "../components/Beams";
 import ProjectNav from "../components/ProjectNav";
+import { useNavigate } from "react-router-dom"
 import { VscChevronLeft } from "react-icons/vsc"
 
 const wazuhNav = [
@@ -17,13 +18,13 @@ const wazuhNav = [
 ];
 
 export default function Wazuh() {
+  const navigate = useNavigate();
 
   return (
-
     <>
       {/* Background */}
       <div className="fixed inset-0 pointer-events-none -z-10">
-        <Beams beamWidth={3} beamHeight={30} lightColor="#ffefdd" speed={2} noiseIntensity={1.75} scale={0.2} rotation={30}/>
+        <Beams beamWidth={3} beamHeight={30} lightColor="#ffefdd" speed={2} noiseIntensity={1.75} scale={0.2} rotation={30} />
         <div className="absolute inset-0 bg-black/40 pointer-events-none" />
       </div>
 
@@ -374,12 +375,14 @@ export default function Wazuh() {
 
               {/* Back to Projects */}
               <section className="px-10 pb-32 flex justify-center">
-                <a href="/projects" className="inline-flex items-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-display text-lg transition cursor-target cursor-none hover:text-(--text-h)">
+                <button
+                  onClick={() => navigate("/projects")}
+                  className="inline-flex items-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-display text-lg transition cursor-target cursor-none hover:text-(--text-h)"
+                >
                   <VscChevronLeft className="text-2xl" />
                   Back to Projects
-                </a>
+                </button>
               </section>
-
             </div>
           </section>
         </div>

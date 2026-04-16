@@ -1,6 +1,7 @@
 import Grainient from "../components/Grainient";
 import Beams from "../components/Beams";
 import ProjectNav from "../components/ProjectNav";
+import { useNavigate } from "react-router-dom"
 import { VscChevronLeft } from "react-icons/vsc"
 
 const azureNav = [
@@ -17,6 +18,7 @@ const azureNav = [
 ];
 
 export default function Azure() {
+  const navigate = useNavigate();
 
   return (
     <>
@@ -501,10 +503,13 @@ WindowsEvents
 
               {/* Back to Projects */}
               <section className="px-10 pb-32 flex justify-center">
-                <a href="/projects" className="inline-flex items-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-display text-lg transition cursor-target cursor-none hover:text-(--text-h)">
+                <button
+                  onClick={() => navigate("/projects")}
+                  className="inline-flex items-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-display text-lg transition cursor-target cursor-none hover:text-(--text-h)"
+                >
                   <VscChevronLeft className="text-2xl" />
                   Back to Projects
-                </a>
+                </button>
               </section>
             </div>
           </section>
