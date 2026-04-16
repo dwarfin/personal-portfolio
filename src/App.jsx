@@ -9,13 +9,11 @@ import Azure from "./pages/Azure";
 import NotFound from './pages/NotFound';
 import ThankYou from './pages/ThankYou';
 
-// import TargetCursor from "./components/TargetCursor";
+import ScrollToTop from "./components/ScrollTop";
 import CustomCursor from "./components/TargetCursor";
-
+import Beams from './components/Beams';
 import { VscHome, VscMortarBoard, VscRepo, VscMail } from "react-icons/vsc";
-
 import Dock from './components/Dock';
-
 import './App.css'
 
 export default function App() {
@@ -30,6 +28,22 @@ export default function App() {
 
   return (
     <>
+
+      <div className="fixed inset-0 -z-10 pointer-events-none beams-bg">
+        <Beams
+          beamWidth={3}
+          beamHeight={30}
+          lightColor="#ffefdd"
+          speed={2}
+          noiseIntensity={1.75}
+          scale={0.2}
+          rotation={30}
+        />
+        <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+      </div>
+
+      <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/education" element={<Education />} />

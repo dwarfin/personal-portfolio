@@ -5,20 +5,6 @@ import Beams from "../components/Beams";
 export default function Education() {
   return (
     <>
-      <div className="fixed inset-0 pointer-events-none -z-10">
-        <Beams
-          beamWidth={3}
-          beamHeight={30}
-          lightColor="#ffefdd"
-          speed={2}
-          noiseIntensity={1.75}
-          scale={0.2}
-          rotation={30}
-        />
-
-        <div className="absolute inset-0 bg-black/40 pointer-events-none" />
-      </div>
-
       <section className="mt-10">
         <h1 className="text-3xl text-(--text-h) font-display mb-10 px-2 z-10">
           Coursework

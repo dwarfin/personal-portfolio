@@ -12,22 +12,8 @@ export default function ContactForm() {
 
   return (
     <>
-      {/* Background Beams */}
-      <div className="fixed inset-0 pointer-events-none -z-10">
-        <Beams
-          beamWidth={3}
-          beamHeight={30}
-          lightColor="#ffefdd"
-          speed={2}
-          noiseIntensity={1.75}
-          scale={0.2}
-          rotation={30}
-        />
-        <div className="absolute inset-0 bg-black/40 pointer-events-none" />
-      </div>
-
       {/* Center Wrapper */}
-      <div className="flex justify-center items-center min-h-screen px-4">
+      <div className="flex justify-center items-center min-h-svh px-4 overflow-hidden">
 
         {/* BorderGlow Wrapper */}
         <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28}

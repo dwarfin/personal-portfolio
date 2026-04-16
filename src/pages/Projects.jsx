@@ -5,20 +5,6 @@ import ProjectModal from "../components/ProjectModal";
 export default function Projects() {
   return (
     <>
-      <div className="fixed inset-0 pointer-events-none -z-10">
-        <Beams
-          beamWidth={3}
-          beamHeight={30}
-          lightColor="#ffefdd"
-          speed={2}
-          noiseIntensity={1.75}
-          scale={0.2}
-          rotation={30}
-        />
-
-        <div className="absolute inset-0 bg-black/40 pointer-events-none" />
-      </div>
-
       <section id="projects" className="mt-10 mb-32 px-2 mx-6">
         <div className="mb-10">
           <h1 className="text-(--text-h)">

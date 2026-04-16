@@ -144,3 +144,7 @@ code {
 @utility no-scrollbar {
   @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
 }
+
+.beams-bg {
+  top: calc(env(safe-area-inset-top) * -1);
+}
