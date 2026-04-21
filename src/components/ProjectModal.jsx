@@ -81,7 +81,7 @@ export default function ProjectModal({
 
                   <button
                     onClick={() => setActive(false)}
-                    className="text-3xl text-(--text) hover:text-(--text-h) transition cursor-target cursor-none"
+                    className="text-3xl text-(--text) hover:text-(--text-h) transition  cursor-pointer"
                   >
                     <VscChromeClose />
                   </button>
@@ -92,10 +92,10 @@ export default function ProjectModal({
                   <div className="text-left mb-10">
                     <button
                       onClick={() => navigate(cta.href)}
-                      className="inline-flex items-center justify-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-semibold text-base hover:text-(--text-h) transition cursor-target cursor-none"
+                      className="inline-flex items-center justify-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-semibold text-base hover:text-(--text-h) transition  cursor-pointer"
                     >
                       View Full Project
-                      <VscChevronRight className="text-xl" />
+                      <VscChevronRight className="text-x" />
                     </button>
                   </div>
                 )}
@@ -141,7 +141,7 @@ export default function ProjectModal({
                 {/* CTA */}
                 {cta && (
                   <div className="text-center mt-10">
-                    <button onClick={() => navigate(cta.href)} className="inline-flex items-center justify-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-semibold text-base hover:text-(--text-h) transition cursor-target cursor-none">
+                    <button onClick={() => navigate(cta.href)} className="inline-flex items-center justify-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-semibold text-base hover:text-(--text-h) transition  cursor-pointer">
                       View Full Project
                       <VscChevronRight className="text-xl" />
                     </button>
@@ -158,7 +158,7 @@ export default function ProjectModal({
       <motion.div
         layoutId={`card-${title}-${id}`}
         onClick={() => setActive(true)}
-        className="group relative w-full max-w-95 h-105 cursor-none backdrop-blur-md rounded-3xl"
+        className="group relative w-full max-w-95 h-105 cursor-pointer backdrop-blur-md rounded-3xl"
       >
         <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28} glowRadius={40} glowIntensity={1} coneSpread={40} animated={false} colors={['#c084fc', '#f472b6', '#38bdf8']} className="w-full h-full" >
           <div className="p-0 w-full h-full rounded-3xl overflow-hidden flex flex-col">

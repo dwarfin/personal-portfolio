@@ -59,7 +59,7 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={state.submitting}
-              className="hover:opacity-90 inline-flex items-center justify-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-semibold text-base hover:text-(--text-h) transition cursor-target cursor-none
+              className="hover:opacity-90 inline-flex items-center justify-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-semibold text-base hover:text-(--text-h) transition  cursor-pointer
               "
             >
               {state.submitting ? "Sending..." : "Send Message"}

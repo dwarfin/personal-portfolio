@@ -491,7 +491,7 @@ WindowsEvents
               <section className="px-10 pb-32 flex justify-center">
                 <button
                   onClick={() => navigate("/projects")}
-                  className="inline-flex items-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-display text-lg transition cursor-target cursor-none hover:text-(--text-h)"
+                  className="inline-flex items-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-display text-lg transition  cursor-pointer hover:text-(--text-h)"
                 >
                   <VscChevronLeft className="text-2xl" />
                   Back to Projects

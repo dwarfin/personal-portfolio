@@ -356,12 +356,12 @@ export default function Wazuh() {
 
                 {/* Video */}
                 <div className="mb-6">
-                  <video src="/demo.mp4" className="w-full max-w-3xl mx-auto rounded-lg border border-(--border)" controls muted preload="metadata"></video>
+                  <video src="/demo.mp4" className="w-full max-w-3xl mx-auto rounded-lg border border-(--border) cursor-pointer" controls muted preload="metadata"></video>
                 </div>
 
                 {/* PDF */}
                 <div className="w-full max-w-3xl mx-auto mb-6 text-transparent bg-clip-text bg-(--accent) text-center">
-                  <a href="/presentation.pdf" target="_blank" className="inline-block px-6 py-3 border border-(--border) hover:border-(--accent-border) hover:bg-(--accent-bg) cursor-target font-display transition duration-400">
+                  <a href="/presentation.pdf" target="_blank" className="inline-block px-6 py-3 border border-(--border) hover:border-(--accent-border) hover:bg-(--accent-bg)  font-display transition duration-400 cursor-pointer">
                     Open PDF
                   </a>
                 </div>
@@ -371,7 +371,7 @@ export default function Wazuh() {
               <section className="px-10 pb-32 flex justify-center">
                 <button
                   onClick={() => navigate("/projects")}
-                  className="inline-flex items-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-display text-lg transition cursor-target cursor-none hover:text-(--text-h)"
+                  className="inline-flex items-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-display text-lg transition  hover:text-(--text-h) cursor-pointer"
                 >
                   <VscChevronLeft className="text-2xl" />
                   Back to Projects

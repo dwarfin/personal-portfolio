@@ -24,10 +24,9 @@ export default function NotFound() {
               The page you’re looking for doesn’t exist.
             </p>
 
-            {/* Signature button */}
             <button
               onClick={() => navigate("/")}
-              className="cursor-none hover:opacity-80 transition shrink-0 bg-transparent p-0 cursor-target mx-auto"
+              className="hover:opacity-80 transition shrink-0 bg-transparent p-0  mx-auto cursor-pointer"
             >
               <img
                 src="/signature.svg"
@@ -36,7 +35,6 @@ export default function NotFound() {
               />
             </button>
 
-            {/* Hint */}
             <p className="text-xs text-gray-500 tracking-wide">
               Tap the signature to return home
             </p>

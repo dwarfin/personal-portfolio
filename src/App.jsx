@@ -10,7 +10,6 @@ import NotFound from './pages/NotFound';
 import ThankYou from './pages/ThankYou';
 
 import ScrollToTop from "./components/ScrollTop";
-import CustomCursor from "./components/TargetCursor";
 import Beams from './components/Beams';
 import Grainient from './components/Grainient';
 
@@ -85,10 +84,8 @@ export default function App() {
 
       </Routes>
 
-      <CustomCursor hideDefaultCursor={true} />
-
       <section className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
-        <Dock className="cursor-target"
+        <Dock className=""
           items={items}
           panelHeight={70}
           baseItemSize={50}

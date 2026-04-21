@@ -23,7 +23,7 @@ export default function ThankYou() {
                         </p>
 
                         {/* Signature button */}
-                        <button onClick={() => navigate("/")} className="cursor-none hover:opacity-80 transition shrink-0 bg-transparent p-0 cursor-target mx-auto">
+                        <button onClick={() => navigate("/")} className=" hover:opacity-80 transition shrink-0 bg-transparent p-0  mx-auto cursor-pointer">
                             <img src="/signature.svg" alt="Logo" className="w-28 md:w-36 lg:w-44 h-auto mx-auto"/>
                         </button>
 
