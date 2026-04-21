@@ -141,10 +141,7 @@ export default function ProjectModal({
                 {/* CTA */}
                 {cta && (
                   <div className="text-center mt-10">
-                    <button
-                      onClick={() => navigate(cta.href)}
-                      className="inline-flex items-center justify-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-semibold text-base hover:text-(--text-h) transition cursor-target cursor-none"
-                    >
+                    <button onClick={() => navigate(cta.href)} className="inline-flex items-center justify-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-semibold text-base hover:text-(--text-h) transition cursor-target cursor-none">
                       View Full Project
                       <VscChevronRight className="text-xl" />
                     </button>
@@ -161,7 +158,7 @@ export default function ProjectModal({
       <motion.div
         layoutId={`card-${title}-${id}`}
         onClick={() => setActive(true)}
-        className="group relative w-full max-w-95 h-105 cursor-none backdrop-blur-md rounded-3xl cursor-target"
+        className="group relative w-full max-w-95 h-105 cursor-none backdrop-blur-md rounded-3xl"
       >
         <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28} glowRadius={40} glowIntensity={1} coneSpread={40} animated={false} colors={['#c084fc', '#f472b6', '#38bdf8']} className="w-full h-full" >
           <div className="p-0 w-full h-full rounded-3xl overflow-hidden flex flex-col">
@@ -179,7 +176,7 @@ export default function ProjectModal({
             {/* Content */}
             <div className="p-6 flex flex-col gap-4">
               <div className="flex justify-between items-start">
-                <h3 className="text-xl font-medium font-display">{title}</h3>
+                <h3 className="text-xl font-medium font-display text-(--text-h)">{title}</h3>
                 <span className="text-xs px-2 py-1 bg-(--accent-bg) text-(--accent-text) rounded-full">
                   {badge}
                 </span>
@@ -189,7 +186,7 @@ export default function ProjectModal({
 
               <div className="flex flex-wrap gap-2">
                 {tags.map((t) => (
-                  <span key={t} className="text-xs px-2 py-1 bg-(--social-bg) rounded">
+                  <span key={t} className="text-xs px-2 py-1 bg-(--social-bg) rounded text-(--accent)">
                     {t}
                   </span>
                 ))}

@@ -7,34 +7,6 @@ export default function NotFound() {
 
   return (
     <>
-      <div className="fixed inset-0 -z-10 w-full h-full pointer-events-none">
-
-        <Grainient
-          color1="#3E4244"
-          color2="#1F2122"
-          color3="#0B0C0C"
-          timeSpeed={1.5}
-          colorBalance={0}
-          warpStrength={1.2}
-          warpFrequency={6}
-          warpSpeed={2}
-          warpAmplitude={50}
-          blendAngle={0}
-          blendSoftness={0.05}
-          rotationAmount={500}
-          noiseScale={2}
-          grainAmount={0.1}
-          grainScale={2}
-          grainAnimated={false}
-          contrast={1.5}
-          gamma={1}
-          saturation={1}
-          centerX={0}
-          centerY={0}
-          zoom={0.9}
-        />
-
-      </div>
       <div className="min-h-screen flex items-center justify-center px-4">
         <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28}
           glowRadius={40} glowIntensity={1} coneSpread={40} animated={false}

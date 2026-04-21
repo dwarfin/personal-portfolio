@@ -16,9 +16,7 @@ export default function ContactForm() {
       <div className="flex justify-center items-center min-h-svh px-4 overflow-hidden">
 
         {/* BorderGlow Wrapper */}
-        <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28}
-            glowRadius={40} glowIntensity={1} coneSpread={40} animated={false}
-            colors={['#c084fc', '#f472b6', '#38bdf8']} className="w-full max-w-lg backdrop-blur-md" >
+        <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28} glowRadius={40} glowIntensity={1} coneSpread={40} animated={false} colors={['#c084fc', '#f472b6', '#38bdf8']} className="w-full max-w-lg backdrop-blur-md" >
           {/* Form Container */}
           <form
             onSubmit={handleSubmit}
@@ -61,7 +59,8 @@ export default function ContactForm() {
             <button
               type="submit"
               disabled={state.submitting}
-              className="px-4 py-3 rounded-lg bg-(--accent-bg) text-(--text-h) font-medium hover:opacity-90 transition cursor-target"
+              className="hover:opacity-90 inline-flex items-center justify-center gap-2 bg-(--accent-bg) text-(--accent) border px-6 py-3 rounded-xl font-semibold text-base hover:text-(--text-h) transition cursor-target cursor-none
+              "
             >
               {state.submitting ? "Sending..." : "Send Message"}
             </button>

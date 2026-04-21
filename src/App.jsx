@@ -12,6 +12,8 @@ import ThankYou from './pages/ThankYou';
 import ScrollToTop from "./components/ScrollTop";
 import CustomCursor from "./components/TargetCursor";
 import Beams from './components/Beams';
+import Grainient from './components/Grainient';
+
 import { VscHome, VscMortarBoard, VscRepo, VscMail } from "react-icons/vsc";
 import Dock from './components/Dock';
 import './App.css'
@@ -30,7 +32,31 @@ export default function App() {
     <>
 
       <div className="fixed inset-0 -z-10 pointer-events-none">
-        <Beams
+          <Grainient
+          color1="#3A4F63"
+          color2="#1A242C"
+          color3="#6A4A72"
+          timeSpeed={.7}
+          colorBalance={0}
+          warpStrength={1.2}
+          warpFrequency={6}
+          warpSpeed={2}
+          warpAmplitude={50}
+          blendAngle={0}
+          blendSoftness={0.05}
+          rotationAmount={500}
+          noiseScale={2}
+          grainAmount={0.1}
+          grainScale={2}
+          grainAnimated={false}
+          contrast={1.5}
+          gamma={1}
+          saturation={1}
+          centerX={0}
+          centerY={0}
+          zoom={0.9}
+        />
+        {/* <Beams
           beamWidth={3}
           beamHeight={30}
           lightColor="#ffefdd"
@@ -39,7 +65,7 @@ export default function App() {
           scale={0.2}
           rotation={30}
         />
-        <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+        <div className="absolute inset-0 bg-black/40 pointer-events-none" /> */}
       </div>
 
       <ScrollToTop />
