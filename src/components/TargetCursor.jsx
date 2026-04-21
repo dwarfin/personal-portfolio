@@ -6,9 +6,8 @@ export default function CustomCursor() {
   const cornersRef = useRef([]);
 
   const isTouch = window.matchMedia("(pointer: coarse)").matches;
-  const isMac = navigator.userAgent.includes("Mac");
 
-  if (isTouch || isMac) {
+  if (isTouch) {
     document.body.style.cursor = "auto";
     return null;
   }
@@ -19,54 +18,47 @@ export default function CustomCursor() {
 
     document.body.style.cursor = "none";
 
-    gsap.set(dot, { xPercent: -50, yPercent: -50, willChange: "transform" });
-    gsap.set(corners, {
-      xPercent: -50,
-      yPercent: -50,
-      opacity: 0,
-      willChange: "transform",
-    });
+    gsap.set(dot, { xPercent: -50, yPercent: -50 });
+    gsap.set(corners, { xPercent: -50, yPercent: -50, opacity: 0 });
 
-    const moveX = gsap.quickTo(dot, "x", { duration: 0.08, ease: "power3.out" });
-    const moveY = gsap.quickTo(dot, "y", { duration: 0.08, ease: "power3.out" });
+    function isHoveringWithBuffer(rect, mouseX, mouseY, buffer = 12) {
+      return (
+        mouseX > rect.left - buffer &&
+        mouseX < rect.right + buffer &&
+        mouseY > rect.top - buffer &&
+        mouseY < rect.bottom + buffer
+      );
+    }
 
-    let mouseX = 0;
-    let mouseY = 0;
-
-    function moveHandler(e) {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-
-      moveX(mouseX);
-      moveY(mouseY);
+    const moveHandler = (e) => {
+      gsap.to(dot, {
+        x: e.clientX,
+        y: e.clientY,
+        duration: 0.15,
+        ease: "power3.out",
+      });
 
       if (!dot.dataset.active) {
         corners.forEach((corner) => {
           gsap.to(corner, {
-            x: mouseX,
-            y: mouseY,
+            x: e.clientX,
+            y: e.clientY,
             opacity: 0,
-            duration: 0.12,
+            duration: 0.25,
             ease: "power3.out",
           });
         });
       }
-    }
+    };
 
-    function isHoveringWithBuffer(rect, x, y, buffer = 12) {
-      return (
-        x > rect.left - buffer &&
-        x < rect.right + buffer &&
-        y > rect.top - buffer &&
-        y < rect.bottom + buffer
-      );
-    }
-
-    function overHandler(e) {
+    const overHandler = (e) => {
       const target = e.target.closest(".cursor-target");
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
 
       if (target) {
         const rect = target.getBoundingClientRect();
+
         if (!isHoveringWithBuffer(rect, mouseX, mouseY)) return;
 
         dot.dataset.active = "true";
@@ -83,7 +75,7 @@ export default function CustomCursor() {
             x: positions[i].x,
             y: positions[i].y,
             opacity: 1,
-            duration: 0.12,
+            duration: 0.25,
             ease: "power3.out",
           });
         });
@@ -92,15 +84,15 @@ export default function CustomCursor() {
 
         corners.forEach((corner) => {
           gsap.to(corner, {
-            x: mouseX,
-            y: mouseY,
+            x: dot._gsap.x,
+            y: dot._gsap.y,
             opacity: 0,
-            duration: 0.12,
+            duration: 0.25,
             ease: "power3.out",
           });
         });
       }
-    }
+    };
 
     window.addEventListener("mousemove", moveHandler);
     window.addEventListener("mouseover", overHandler);
@@ -119,7 +111,7 @@ export default function CustomCursor() {
         <div
           key={i}
           ref={(el) => (cornersRef.current[i] = el)}
-          className="fixed top-0 left-0 z-[9999] pointer-events-none"
+          className="fixed top-0 left-0 z-9999 pointer-events-none"
         >
           <div
             className={`
@@ -134,10 +126,9 @@ export default function CustomCursor() {
         </div>
       ))}
 
-      {/* Dot */}
       <div
         ref={dotRef}
-        className="fixed top-0 left-0 z-[10000] pointer-events-none bg-white w-2 h-2 rounded-[10px]"
+        className="fixed top-0 left-0 z-10000 pointer-events-none bg-white w-2 h-2 rounded-[10px]"
       />
     </>
   );
