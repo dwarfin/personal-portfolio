@@ -17,6 +17,9 @@ import { VscHome, VscMortarBoard, VscRepo, VscMail } from "react-icons/vsc";
 import Dock from './components/Dock';
 import './App.css'
 
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 export default function App() {
   const navigate = useNavigate();
 
@@ -29,9 +32,11 @@ export default function App() {
 
   return (
     <>
+      <Analytics />
+      <SpeedInsights />
 
       <div className="fixed inset-0 -z-10 pointer-events-none">
-          <Grainient
+        <Grainient
           color1="#3A4F63"
           color2="#1A242C"
           color3="#6A4A72"
@@ -74,14 +79,10 @@ export default function App() {
         <Route path="/education" element={<Education />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-
         <Route path="/wazuh" element={<Wazuh />} />
         <Route path="/azure" element={<Azure />} />
-
         <Route path="/thank-you" element={<ThankYou />} />
-
         <Route path="*" element={<NotFound />} />
-
       </Routes>
 
       <section className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">

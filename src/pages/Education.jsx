@@ -19,7 +19,7 @@ export default function Education() {
             <div className="p-8 w-full max-w-96 rounded-2xl text-left space-y-4">
               <div className="w-10 h-1 rounded-full bg-(--accent)"></div>
               <h3 className="text-2xl font-display font-medium text-(--text-h)">B.S. in Computer Science</h3>
-              <p className="text-gray-300 leading-relaxed text-sm">
+              <p className="text-gray-300 leading-relaxed text-sm">  
                 Coursework in cybersecurity, networking, and systems engineering.
               </p>
               <div className="flex flex-wrap gap-2">
