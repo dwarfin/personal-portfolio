@@ -1,5 +1,4 @@
 import Grainient from "../components/Grainient";
-import Beams from "../components/Beams";
 import ProjectNav from "../components/ProjectNav";
 import { useNavigate } from "react-router-dom"
 import { VscChevronLeft } from "react-icons/vsc"

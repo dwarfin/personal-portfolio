@@ -1,5 +1,4 @@
 import React from "react";
-import Beams from "../components/Beams";
 import { useForm, ValidationError } from "@formspree/react";
 import BorderGlow from "../components/BorderGlow";
 

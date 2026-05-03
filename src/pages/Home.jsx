@@ -39,7 +39,7 @@ export default function Home() {
 
                 <div className="flex flex-row flex-wrap justify-center items-center gap-6">
                     <div className="group relative w-fit">
-                        <PixelCardReveal variant="rosegold" className="relative w-50 h-50 overflow-hidden transition-transform duration-500 ease-out hover:-translate-y-1.5">
+                        <PixelCardReveal variant="rosegold" className="relative w-50 h-50 overflow-hidden transition-transform duration-500 ease-out hover:-translate-y-1.5 border-2">
                             <div className="absolute inset-0 flex items-center justify-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 ease-in-out">
                                 <h2>
                                     Who I Am
@@ -54,7 +54,7 @@ export default function Home() {
                     </div>
 
                     <div className="group relative w-fit">
-                        <PixelCardReveal variant="softsteel" className="relative w-50 h-50 overflow-hidden transition-transform duration-500 ease-out hover:-translate-y-1.5">
+                        <PixelCardReveal variant="softsteel" className="relative w-50 h-50 overflow-hidden transition-transform duration-500 ease-out hover:-translate-y-1.5 border-2">
                             <div className="absolute inset-0 flex items-center justify-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 ease-in-out">
                                 <h2>
                                     What I Do
@@ -69,7 +69,7 @@ export default function Home() {
                     </div>
 
                     <div className="group relative w-fit">
-                        <PixelCardReveal variant="feather" className="relative w-50 h-50 overflow-hidden transition-transform duration-500 ease-out hover:-translate-y-1.5">
+                        <PixelCardReveal variant="feather" className="relative w-50 h-50 overflow-hidden transition-transform duration-500 ease-out hover:-translate-y-1.5 border-2">
                             <div className="absolute inset-0 flex items-center justify-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 ease-in-out">
                                 <h2>
                                     How I Work
@@ -84,7 +84,7 @@ export default function Home() {
                     </div>
 
                     <div className="group relative w-fit">
-                        <PixelCardReveal variant="rosegold" className="relative w-50 h-50 overflow-hidden transition-transform duration-500 ease-out hover:-translate-y-1.5">
+                        <PixelCardReveal variant="rosegold" className="relative w-50 h-50 overflow-hidden transition-transform duration-500 ease-out hover:-translate-y-1.5 border-2">
                             <div className="absolute inset-0 flex items-center justify-center opacity-100 group-hover:opacity-0 transition-opacity duration-300 ease-in-out">
                                 <h2>
                                     Where I'm Going

@@ -1,6 +1,5 @@
 import Grainient from "../components/Grainient";
 import BorderGlow from '../components/BorderGlow';
-import Beams from "../components/Beams";
 
 export default function Education() {
   return (
