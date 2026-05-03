@@ -36,9 +36,9 @@ export default function App() {
 
       <div className="fixed inset-0 -z-10 pointer-events-none">
         <Grainient
-          color1="#2C3A45"
-          color2="#0F1418"
-          color3="#3A4E58"
+          color1="#1C2630"
+          color2="#0E141A"
+          color3="#2F3E4A"
           timeSpeed={0.5}
           colorBalance={0}
           warpStrength={0.6}
@@ -59,6 +59,8 @@ export default function App() {
           centerY={0}
           zoom={0.95}
         />
+
+
       </div>
 
       <ScrollToTop />

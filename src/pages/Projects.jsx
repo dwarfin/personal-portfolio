@@ -1,5 +1,4 @@
 import Grainient from "../components/Grainient";
-import Beams from "../components/Beams"
 import ProjectModal from "../components/ProjectModal";
 
 export default function Projects() {
