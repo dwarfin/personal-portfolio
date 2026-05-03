@@ -45,7 +45,7 @@ export default function Projects() {
             title="Azure Honeypot"
             badge="Case Study"
             subtitle="Security Engineering & Threat Analysis"
-            description="Deployed a cloud-based honeypot in Azure and integrated it with Microsoft Sentinel to capture, analyze, and visualize real world attack traffic."
+            description="Deployed a cloud-based honeypot in Azure and integrated it with Microsoft Sentinel to analyze and visualize real world attack traffic."
             tags={["Azure", "Sentinel", "KQL"]}
             color={[0.1, 0.55, 1.0]}
             sections={[

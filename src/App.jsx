@@ -36,9 +36,10 @@ export default function App() {
 
       <div className="fixed inset-0 -z-10 pointer-events-none">
         <Grainient
-          color1="#1C2630"
-          color2="#0E141A"
-          color3="#2F3E4A"
+color1="#2A3540"   // lighter steel blue
+color2="#1A222A"   // charcoal navy
+color3="#3C4A56"   // soft slate
+
           timeSpeed={0.5}
           colorBalance={0}
           warpStrength={0.6}

@@ -59,10 +59,8 @@ export default function ProjectModal({
       {/* EXPANDED MODAL */}
       <AnimatePresence>
         {active && (
-          // <div className="fixed inset-0 z-50 flex justify-center items-start p-10">
-          <div className="fixed top-0 left-0 right-0 bottom-24 z-50 flex justify-center items-start p-4 sm:p-10">
+          <div className="fixed inset-0 z-50 flex justify-center items-start py-5">
             <motion.div
-              layoutId={`card-${title}-${id}`}
               ref={cardRef}
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -156,11 +154,11 @@ export default function ProjectModal({
 
       {/* COLLAPSED CARD */}
       <motion.div
-        layoutId={`card-${title}-${id}`}
         onClick={() => setActive(true)}
         className="group relative w-full max-w-95 h-105 cursor-pointer backdrop-blur-md rounded-3xl"
       >
-        <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28} glowRadius={40} glowIntensity={1} coneSpread={40} animated={false} colors={['#c084fc', '#f472b6', '#38bdf8']} className="w-full h-full" >
+        <BorderGlow className="cursor-pointer" >
+
           <div className="p-0 w-full h-full rounded-3xl overflow-hidden flex flex-col">
 
             {/* Header */}

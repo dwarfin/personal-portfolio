@@ -12,13 +12,11 @@ export default function Education() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-6">
 
           {/* Card 1 */}
-          <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28}
-            glowRadius={40} glowIntensity={1} coneSpread={40} animated={false}
-            colors={['#c084fc', '#f472b6', '#38bdf8']} className="backdrop-blur-md cursor-pointer">
+          <BorderGlow className="cursor-pointer" >
             <div className="p-8 w-full max-w-96 rounded-2xl text-left space-y-4">
               <div className="w-10 h-1 rounded-full bg-(--accent)"></div>
               <h3 className="text-2xl font-display font-medium text-(--text-h)">B.S. in Computer Science</h3>
-              <p className="text-gray-300 leading-relaxed text-sm">  
+              <p className="text-gray-300 leading-relaxed text-sm">
                 Coursework in cybersecurity, networking, and systems engineering.
               </p>
               <div className="flex flex-wrap gap-2">
@@ -29,9 +27,7 @@ export default function Education() {
           </BorderGlow>
 
           {/* Card 2 */}
-          <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28}
-            glowRadius={40} glowIntensity={1} coneSpread={40} animated={false}
-            colors={['#c084fc', '#f472b6', '#38bdf8']} className="backdrop-blur-md cursor-pointer">
+          <BorderGlow className="cursor-pointer" >
             <div className="p-8 w-full max-w-96 rounded-2xl text-left space-y-4">
               <div className="w-10 h-1 rounded-full bg-(--accent)"></div>
               <h3 className="text-2xl font-display font-medium text-(--text-h)">Data Privacy & Security</h3>
@@ -46,9 +42,7 @@ export default function Education() {
           </BorderGlow>
 
           {/* Card 3 */}
-          <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28}
-            glowRadius={40} glowIntensity={1} coneSpread={40} animated={false}
-            colors={['#c084fc', '#f472b6', '#38bdf8']} className="backdrop-blur-md cursor-pointer">
+          <BorderGlow className="cursor-pointer" >
             <div className="p-8 w-full max-w-96 rounded-2xl text-left space-y-4">
               <div className="w-10 h-1 rounded-full bg-(--accent)"></div>
               <h3 className="text-2xl font-display font-medium text-(--text-h)">Generative AI</h3>
@@ -63,9 +57,7 @@ export default function Education() {
           </BorderGlow>
 
           {/* Card 4 */}
-          <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28}
-            glowRadius={40} glowIntensity={1} coneSpread={40} animated={false}
-            colors={['#c084fc', '#f472b6', '#38bdf8']} className="backdrop-blur-md cursor-pointer">
+          <BorderGlow className="cursor-pointer" >
             <div className="p-8 w-full max-w-96 rounded-2xl text-left space-y-4">
               <div className="w-10 h-1 rounded-full bg-(--accent)"></div>
               <h3 className="text-2xl font-display font-medium text-(--text-h)">Operating Systems Theory</h3>
@@ -80,9 +72,7 @@ export default function Education() {
           </BorderGlow>
 
           {/* Card 5 */}
-          <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28}
-            glowRadius={40} glowIntensity={1} coneSpread={40} animated={false}
-            colors={['#c084fc', '#f472b6', '#38bdf8']} className="backdrop-blur-md cursor-pointer">
+          <BorderGlow className="cursor-pointer" >
             <div className="p-8 w-full max-w-96 rounded-2xl text-left space-y-4">
               <div className="w-10 h-1 rounded-full bg-(--accent)"></div>
               <h3 className="text-2xl font-display font-medium text-(--text-h)">Software Engineering</h3>
@@ -105,9 +95,7 @@ export default function Education() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-6">
 
-          <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28}
-            glowRadius={40} glowIntensity={1} coneSpread={40} animated={false}
-            colors={['#c084fc', '#f472b6', '#38bdf8']} className="backdrop-blur-md cursor-pointer">
+          <BorderGlow className="cursor-pointer" >
             <div className="p-8 w-full max-w-96 rounded-2xl text-left space-y-4">
               <div className="w-10 h-1 rounded-full bg-(--accent3)"></div>
               <h3 className="text-2xl font-display font-medium text-(--text-h)">

@@ -15,11 +15,10 @@ export default function ContactForm() {
       <div className="flex justify-center items-center min-h-svh px-4 overflow-hidden">
 
         {/* BorderGlow Wrapper */}
-        <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28} glowRadius={40} glowIntensity={1} coneSpread={40} animated={false} colors={['#c084fc', '#f472b6', '#38bdf8']} className="w-full max-w-lg backdrop-blur-md" >
-          {/* Form Container */}
+        <BorderGlow className="cursor-pointer w-full max-w-md p-8 rounded-3xl" borderRadius={28}>
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-4 p-8 rounded-3xl backdrop-blur-xl"
+            className="flex flex-col gap-4"
           >
             <h2 className="text-2xl font-display text-(--text-h) mb-2">
               Send a Message

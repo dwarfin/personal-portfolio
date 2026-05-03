@@ -8,7 +8,8 @@ export default function ThankYou() {
     return (
         <>
             <div className="min-h-screen flex items-center justify-center px-4">
-                <BorderGlow edgeSensitivity={10} glowColor="40 80 80" backgroundColor="" borderRadius={28} glowRadius={40} glowIntensity={1} coneSpread={40} animated={false} colors={["#c084fc", "#f472b6", "#38bdf8"]} className="w-full max-w-lg">
+                <BorderGlow className="cursor-pointer" >
+
                     <div className="p-10 rounded-3xl bg-black/10 backdrop-blur-md border border-white/10 text-center space-y-6">
 
                         {/* Accent bar (matches your cards) */}
@@ -24,7 +25,7 @@ export default function ThankYou() {
 
                         {/* Signature button */}
                         <button onClick={() => navigate("/")} className=" hover:opacity-80 transition shrink-0 bg-transparent p-0  mx-auto cursor-pointer">
-                            <img src="/signature.svg" alt="Logo" className="w-28 md:w-36 lg:w-44 h-auto mx-auto"/>
+                            <img src="/signature.svg" alt="Logo" className="w-28 md:w-36 lg:w-44 h-auto mx-auto" />
                         </button>
 
                         {/* Optional hint */}
