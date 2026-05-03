@@ -1,11 +1,10 @@
-"use client"
-
 import * as React from "react"
 import { AnimatePresence, motion } from "motion/react"
-import Threads from "./Waves"
 import { VscChromeClose, VscChevronRight } from "react-icons/vsc"
 import { useNavigate } from "react-router-dom"
 import BorderGlow from "./BorderGlow"
+
+import Orb from "./Orb"
 
 export default function ProjectModal({
   title,
@@ -163,12 +162,12 @@ export default function ProjectModal({
 
             {/* Header */}
             <div className="h-48 overflow-hidden rounded-t-2xl relative">
-              <Threads
+              <Orb
                 color={color}
-                amplitude={1}
-                distance={0}
-                enableMouseInteraction={false}
+                rotationSpeed={0.15}
+                backgroundColor="#000000"
               />
+
             </div>
 
             {/* Content */}
