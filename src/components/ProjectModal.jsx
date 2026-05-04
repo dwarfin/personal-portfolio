@@ -4,8 +4,6 @@ import { VscChromeClose, VscChevronRight } from "react-icons/vsc"
 import { useNavigate } from "react-router-dom"
 import BorderGlow from "./BorderGlow"
 
-import Orb from "./Orb"
-
 export default function ProjectModal({
   title,
   badge,
@@ -161,14 +159,8 @@ export default function ProjectModal({
           <div className="p-0 w-full h-full rounded-3xl overflow-hidden flex flex-col">
 
             {/* Header */}
-            <div className="h-48 overflow-hidden rounded-t-2xl relative">
-              <Orb
-                color={color}
-                rotationSpeed={0.15}
-                backgroundColor="#000000"
-              />
-
-            </div>
+            {/* <div className="h-48 overflow-hidden rounded-t-2xl relative">
+            </div> */}
 
             {/* Content */}
             <div className="p-6 flex flex-col gap-4">
